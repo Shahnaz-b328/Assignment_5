@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
     <title>Cooking Master</title>
 </head>
 <body>
-    <div id="mealNameSearch">
+    <main>
+        <div class="input-group w-25 m-5">
+            <input id="search-field" type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+              aria-describedby="search-addon" />
+            <button onclick="searchMeal()" type="button" class="btn btn-outline-primary">search</button>
+          </div>
 
-    </div>
-    <div id="meal-name">
-
-    </div>
+          <div id="container" class="row row-cols-1 row-cols-md-3 g-4" style="width:70%">
+    
+          </div>
+    </main>
+    
+   
     <script src="cooking-app.js"></script>
 </body>
 </html>
